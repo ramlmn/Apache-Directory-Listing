@@ -7,7 +7,6 @@ Options +Indexes
 
   # META VIEWPORT
   IndexHeadInsert "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />"
-  IndexIgnore .htaccess .??* *~ *# HEADER* README* RCS CVS *,v *,t *.inc*
 
 # GENERAL ICONS (BLANK, DIRECTORY, PARENT DIRECTORY)
 
