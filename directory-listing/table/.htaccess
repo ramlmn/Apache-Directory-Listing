@@ -61,4 +61,4 @@ Options +Indexes
 
 	HeaderName /{SOME_FOLDER}/header.html
 	ReadmeName /{SOME_FOLDER}/footer.html
-	IndexStyleSheet "/{SOME_FOLDER}/row.css"
+	IndexStyleSheet "/{SOME_FOLDER}/table.css"
