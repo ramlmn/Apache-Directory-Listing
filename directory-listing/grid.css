@@ -43,7 +43,6 @@ tr {
   width: 120px;
   display: inline-block;
   margin: 10px;
-  float: left;
   border: 1px solid #ddd;
   cursor: pointer;
 }
