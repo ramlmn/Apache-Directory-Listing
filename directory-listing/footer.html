@@ -1,16 +1,25 @@
-</div><!--/.wrapper-->
+  </main>
 
-  <div class="footer block">
+  <footer>
     <i>Apache directory</i>
-  </div><!--/.footer-->
-  <script type="text/javascript">
-    // grab the 2nd child and add the parent class. tr:nth-child(2)
-    document.getElementsByTagName('tr')[1].className = 'parent';
+  </footer>
+  
+  <script>
+  
+    (function(){
+    
+      var parent = document.querySelector('tr:not(.indexhead)');
+      parent.classList.add('parent');
 
-    [].forEach.call(document.querySelectorAll('tr'), function(tr) {
-      tr.addEventListener("click", function(){
-        window.location.href = this.querySelectorAll('a')[0].href;
+      // Make all the icon links unfocusable with tab
+      var icolinks = document.querySelectorAll('.indexcolicon a');
+      [].forEach.call(icolinks, function(link) {
+
+        link.setAttribute('tabindex', '-1');
+
       });
-    });
-
+      
+    })();
+    
   </script>
+  

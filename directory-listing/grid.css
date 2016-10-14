@@ -1,37 +1,26 @@
 * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-html {
-  min-height: 100%;
-  color: #61666c;
+html,
+body {
+  margin: 0;
+  color: #404040;
   font-size: 16px;
   font-family: Roboto, Ubuntu, 'Open Sans', sans-serif;
-  line-height: 1.5em;
+  line-height: 1.5;
+}
+
+body {
+  min-height: 100vh;
   border-top: 10px solid #7f8c8d;
   border-bottom: 10px solid #7f8c8d;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  -webkit-backface-visibility: hidden;
-}
-
-.wrapper {
+main {
   margin: 0 auto;
   padding-top: 50px;
   max-width: 1120px;
-}
-
-.block {
-  margin: 20px 0;
-  padding: 20px;
-  color: #9099A3;
 }
 
 table {
@@ -39,9 +28,15 @@ table {
   border-collapse: collapse;
 }
 
+tbody {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 tr {
   width: 120px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   margin: 10px;
   border: 1px solid #ddd;
   cursor: pointer;
@@ -59,29 +54,9 @@ tr.indexhead {
 	display: none;
 }
 
-th {
-  text-align: left;
-	font-size: 1.05em;
-  padding: 5px 10px;
-}
-
-th + th {
-  width: 70%;
-}
-
-th + th + th + th {
-  width: 5%;
-}
-
-td {
-  display: inline-block;
-  padding: 5px 10px;
-  vertical-align: middle;
-  text-align: left;
-}
-
-td.indexcolname {
-  max-width: 100%;
+tr td {
+  display: flex;
+  padding: 0;
 }
 
 td.indexcolname a {
@@ -90,61 +65,67 @@ td.indexcolname a {
   text-overflow: ellipsis;
 }
 
-td a {
-  display: block;
+td.indexcollastmod,
+td.indexcolsize {
+  display: none;
 }
 
-tr a {
+td a {
 	color: #2980b9;
 	text-decoration: none;
+  padding: 8px;
+  flex: 1;
 }
 
 img {
+  width: 100%;
   height: 100%;
 }
 
-.footer {
+footer {
   text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+  color: #9099A3;
 }
 
 
-/* SCREEN RULES */
-/*=============================================================================*/
- 
-/* MOBILE DEVICES */
+
+
+
 @media only screen and (min-width: 320px) {
-  .wrapper {
+  main {
     max-width: 280px;
   }
 }
- 
+
 @media only screen and (min-width: 480px) {
-  .wrapper {
+  main {
     max-width: 420px;
   }
 }
- 
- 
+
+
 @media only screen and (min-width: 640px) {
-  .wrapper {
+  main {
     max-width: 560px;
   }
 }
- 
+
 @media only screen and (min-width: 768px) {
-  .wrapper {
+  main {
     max-width: 700px;
   }
 }
- 
+
 @media only screen and (min-width: 1024px) {
-  .wrapper {
+  main {
     max-width: 980px;
   }
 }
- 
+
 @media only screen and (min-width: 1280px) {
-  .wrapper {
+  main {
     max-width: 1120px;
   }
 }
