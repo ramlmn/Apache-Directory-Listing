@@ -22,4 +22,4 @@ You can add your custom code in the `header.html` and `footer.html`.
 ![table](https://cloud.githubusercontent.com/assets/12368291/19376783/951cc542-91fe-11e6-91d1-4a41b7880f7f.png)  
 
 ## Credits
-Icons referenced from [File Types Icons Set](https://web.archive.org/web/20160728061928/http://uifest.com/product/file-types-icons-set).
+Icons referenced from [File Types Icons Set](https://web.archive.org/web/20161030160003/http://uifest.com/product/file-types-icons-set).
