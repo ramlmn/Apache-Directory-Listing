@@ -1,0 +1,66 @@
+Options +Indexes
+
+<IfModule mod_autoindex.c>
+
+  # Ignore listing of the listing directory
+  IndexIgnore "{LISTING_DIRECTORY}"
+
+  # Indexing options
+  IndexOptions +AddAltClass +Charset=UTF-8 +FancyIndexing +FoldersFirst +HTMLTable
+  IndexOptions +IgnoreCase +NameWidth=* +SuppressRules +SuppressDescription +IconsAreLinks
+
+  # Some meta tags to add to the head tag
+  IndexHeadInsert "<meta name='viewport' content='width=device-width, initial-scale=1'><meta http-equiv='X-UA-Compatible' content='IE=edge'>"
+
+  HeaderName "{LISTING_DIRECTORY}/header.html"
+  ReadmeName "{LISTING_DIRECTORY}/footer.html"
+  IndexStyleSheet "{LISTING_DIRECTORY}/{LISTING_STYLE}.css"
+
+
+  # Registering icons
+  # Default icon
+  DefaultIcon "{LISTING_DIRECTORY}/icons/unknown.svg"
+
+  # Some generic icons
+  AddIcon "{LISTING_DIRECTORY}/icons/blank.svg" ^^BLANKICON^^
+  AddIcon "{LISTING_DIRECTORY}/icons/folder.svg" ^^DIRECTORY^^
+  AddIcon "{LISTING_DIRECTORY}/icons/folder-home.svg" ..
+
+  # Extension specific icons
+  AddIcon "{LISTING_DIRECTORY}/icons/archive.svg" .zip .7z .bz2 .cab .gz .tar .rar
+  AddIcon "{LISTING_DIRECTORY}/icons/audio.svg" .aac .aif .aifc .aiff .ape .au .flac .iff .m4a .mid .mp3 .mpa .ra .wav .wma .f4a .f4b .oga .ogg .xm .it .s3m .mod
+  AddIcon "{LISTING_DIRECTORY}/icons/bin.svg" .bin .hex
+  AddIcon "{LISTING_DIRECTORY}/icons/code.svg" .xml
+  AddIcon "{LISTING_DIRECTORY}/icons/doc.svg" .doc .docx .docm .dot .dotx .dotm .log .msg .odt .pages .rtf .tex .wpd .wps
+  AddIcon "{LISTING_DIRECTORY}/icons/img.svg" .bmp .png .tiff .tif .gif .jpg .jpeg .jpe .psd .ai .ico
+  AddIcon "{LISTING_DIRECTORY}/icons/spreadsheet.svg" .xlsx .xlsm .xltx .xltm .xlam .xlr .xls .csv
+  AddIcon "{LISTING_DIRECTORY}/icons/presentation.svg" .ppt .pptx .pot .potx .pptm .potm .xps
+  AddIcon "{LISTING_DIRECTORY}/icons/c++.svg" .cpp
+  AddIcon "{LISTING_DIRECTORY}/icons/c.svg" .c
+  AddIcon "{LISTING_DIRECTORY}/icons/css3.svg" .css .sass .scss .less
+  AddIcon "{LISTING_DIRECTORY}/icons/font.svg" .ttf .TTF .woff .WOFF .woff2 .WOFF2 .otf .OTF
+  AddIcon "{LISTING_DIRECTORY}/icons/h.svg" .h
+  AddIcon "{LISTING_DIRECTORY}/icons/html5.svg" .html .xhtml .shtml .htm .URL .url
+  AddIcon "{LISTING_DIRECTORY}/icons/info.svg" .nfo .info
+  AddIcon "{LISTING_DIRECTORY}/icons/iso.svg" .iso .img
+  AddIcon "{LISTING_DIRECTORY}/icons/java.svg" .jar .java
+  AddIcon "{LISTING_DIRECTORY}/icons/js.svg" .js .json
+  AddIcon "{LISTING_DIRECTORY}/icons/markdown.svg" .md
+  AddIcon "{LISTING_DIRECTORY}/icons/package.svg" .pkg .dmg .rpm .deb
+  AddIcon "{LISTING_DIRECTORY}/icons/pdf.svg" .pdf
+  AddIcon "{LISTING_DIRECTORY}/icons/php.svg" .php .phtml
+  AddIcon "{LISTING_DIRECTORY}/icons/py.svg" .py
+  AddIcon "{LISTING_DIRECTORY}/icons/rb.svg" .rb
+  AddIcon "{LISTING_DIRECTORY}/icons/script.svg" .bat .BAT .cmd .sh .ps .exe .EXE .msi .MSI
+  AddIcon "{LISTING_DIRECTORY}/icons/sql.svg" .sql
+  AddIcon "{LISTING_DIRECTORY}/icons/text.svg" .txt .cnf .conf .map .yaml
+  AddIcon "{LISTING_DIRECTORY}/icons/vector.svg" .svg .svgz
+  AddIcon "{LISTING_DIRECTORY}/icons/video.svg" .asf .asx .avi .flv .mkv .mov .mp4 .mpg .rm .srt .swf .vob .wmv .m4v .f4v .f4p .ogv
+
+  # Icons based on their type
+  AddIconByType (TXT,{LISTING_DIRECTORY}/icons/text.svg) text/*
+  AddIconByType (IMG,{LISTING_DIRECTORY}/icons/img.svg) image/*
+  AddIconByType (SND,{LISTING_DIRECTORY}/icons/audio.svg) audio/*
+  AddIconByType (VID,{LISTING_DIRECTORY}/icons/video.svg) video/*
+
+</IfModule>

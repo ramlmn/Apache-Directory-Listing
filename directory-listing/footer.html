@@ -1,25 +1,46 @@
   </main>
 
   <footer>
-    <i>Apache directory</i>
+    <!--
+      Add any other listing related copyright content here
+    -->
+
+    <a href="https://github.com/ramlmn/Apache-Directory-Listing"><em>Apache Directory Listing</em></a>
   </footer>
   
   <script>
-  
-    (function(){
-    
-      var parent = document.querySelector('tr:not(.indexhead)');
-      parent.classList.add('parent');
+    function joinUntil(array, index, separator) {
+      var result = [];
 
-      // Make all the icon links unfocusable with tab
-      var icolinks = document.querySelectorAll('.indexcolicon a');
-      [].forEach.call(icolinks, function(link) {
+      for (var i = 0; i <= index; i++) {
+        result.push(array[i]);
+      }
 
-        link.setAttribute('tabindex', '-1');
+      return result.join(separator);
+    }
 
-      });
-      
-    })();
-    
+    // Make all the icon links unfocusable with tab
+    var iconLinks = document.querySelectorAll('.indexcolicon a');
+    Array.prototype.forEach.call(iconLinks, function(link) {
+      link.setAttribute('tabindex', '-1');
+    });
+
+    var path = document.querySelector('.js-path');
+    var pathParts = location.pathname.split('/');
+
+    // Removing empty strings
+    for (var i = 0; i < pathParts.length;) {
+      if (pathParts[i]) {
+        i++;
+      } else {
+        pathParts.splice(i, 1);
+      }
+    }
+
+    var pathContents = ['<a href="/">/</a>'];
+    Array.prototype.forEach.call(pathParts, function(part, index) {
+      pathContents.push('<a href="/' + joinUntil(pathParts, index, '/') + '">' + decodeURI(part) + '</a>');
+    });
+
+    path.innerHTML = pathContents.join('&rsaquo;');
   </script>
-  

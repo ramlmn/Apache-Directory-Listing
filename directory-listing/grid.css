@@ -1,131 +1,60 @@
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  margin: 0;
-  color: #404040;
-  font-size: 16px;
-  font-family: Roboto, Ubuntu, 'Open Sans', sans-serif;
-  line-height: 1.5;
-}
-
-body {
-  min-height: 100vh;
-  border-top: 10px solid #7f8c8d;
-  border-bottom: 10px solid #7f8c8d;
-}
-
-main {
-  margin: 0 auto;
-  padding-top: 50px;
-  max-width: 1120px;
-}
+@import 'common.css';
 
 table {
-  width: 100%;
+  text-align: left;
   border-collapse: collapse;
+  border-spacing: 0;
 }
 
-tbody {
+table tbody {
   display: flex;
   flex-wrap: wrap;
 }
 
-tr {
-  width: 120px;
+table tr {
   display: flex;
   flex-direction: column;
-  margin: 10px;
-  border: 1px solid #ddd;
-  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  width: 6.5rem;
+  margin: 0.25rem;
+  padding: 0.5rem;
 }
 
-tr:hover {
-  background-color: #ddd;
+table tr:hover {
+  background-color: #eceff1;
 }
 
-tr.parent {
-  font-weight: 500;
-}
-
-tr.indexhead {
-	display: none;
-}
-
-tr td {
-  display: flex;
-  padding: 0;
-}
-
-td.indexcolname a {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-td.indexcollastmod,
-td.indexcolsize {
+table tr.indexhead,
+table tr .indexcollastmod,
+table tr .indexcolsize {
   display: none;
 }
 
-td a {
-	color: #2980b9;
-	text-decoration: none;
-  padding: 8px;
-  flex: 1;
+table tr .indexcolicon img {
+  max-width: 100%;
 }
 
-img {
-  width: 100%;
-  height: 100%;
+table tr .indexcolicon a {
+  border: none;
 }
 
-footer {
-  text-align: center;
-  margin: 20px 0;
-  padding: 20px;
-  color: #9099A3;
+table td {
+  padding: 0;
 }
 
-
-
-
-
-@media only screen and (min-width: 320px) {
-  main {
-    max-width: 280px;
-  }
+table tr .indexcolname a {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  width: 5.5rem;
 }
 
-@media only screen and (min-width: 480px) {
-  main {
-    max-width: 420px;
-  }
+table tr .indexcolname a,
+table tr .indexcolname a:hover {
+  border: none;
 }
 
-
-@media only screen and (min-width: 640px) {
-  main {
-    max-width: 560px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  main {
-    max-width: 700px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  main {
-    max-width: 980px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  main {
-    max-width: 1120px;
-  }
+table tr .indexcolname {
+  font-size: 0.875rem;
+  padding-top: 0.125rem;
 }
