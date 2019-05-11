@@ -11,50 +11,13 @@ td{
   padding: 0;
 }
 
-a{
-  color: #303F9F;
-}
-
-table {
-  text-align: left;
-  white-space: nowrap;
-  border-collapse: collapse;
-  width: 95%;
-  margin: 0 auto;
-}
-
 .indexcolname a{
   padding: .75rem;
-}
-
-.even-parentdir .indexcolname a{
-  position: relative;
-  color:transparent;
-}
-.even-parentdir .indexcolname a::after{
-  content:'..';
-  position:absolute;
-  left: .75rem;
-  color:#303F9F;
-}
-
-h1{
-  width: 95%;
-  margin: 0 auto;
-  margin-top: 1rem;
-}
-
-address{
-  display: none;
 }
 
 table tr {
   padding: 0 0.25rem;
   border-bottom: 1px solid rgba(0,0,0,0.075);
-}
-
-table tr:hover {
-  background-color: #eceff1;
 }
 
 table tr.indexhead {
@@ -95,10 +58,6 @@ table tr .indexcolsize {
 
 table tr .indexcolsize {
   text-align: right;
-}
-
-table tr .indexcolicon a {
-  border: none;
 }
 
 table tr .indexcolicon img {

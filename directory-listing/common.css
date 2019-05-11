@@ -17,6 +17,28 @@ body {
   border-bottom: 0.5rem solid #607d8b;
 }
 
+h1{
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+table {
+  text-align: left;
+  white-space: nowrap;
+  border-collapse: collapse;
+  width: 95%;
+  margin: 0 auto;
+}
+
+table tr:hover {
+  background-color: #eceff1;
+}
+
+table tr .indexcolicon a {
+  border: none;
+}
+
 main {
   margin: 0 auto;
   padding: 2rem 1rem;
@@ -24,7 +46,7 @@ main {
 }
 
 a {
-  color: #0d47a1;
+  color: #303F9F;
   display: inline-block;
   text-decoration: none;
   border-bottom: 1px solid transparent;
@@ -57,4 +79,23 @@ footer {
 
 footer a {
   color: #546e7a;
+}
+
+.even-parentdir .indexcolname a{
+  position: relative;
+  color:transparent;
+}
+.even-parentdir .indexcolname a::after{
+  content:'..';
+  position:absolute;
+  left: .75rem;
+  color:#303F9F;
+}
+
+address{
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
 }
