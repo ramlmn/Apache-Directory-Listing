@@ -1,0 +1,6 @@
+@import 'table.css';
+@import 'darkmode.css';
+
+table tr, table tr.indexhead {
+  border-bottom-color: #4c4c4c;
+}
