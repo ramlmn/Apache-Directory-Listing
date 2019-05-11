@@ -1,0 +1,28 @@
+body{
+  background-color: #333333;
+  border-top: 0.5rem solid #242424;
+  border-bottom: 0.5rem solid #242424;
+}
+
+table tr:hover {
+  background-color: #434343 !important;
+}
+
+a, h1, td, address{
+  color: #e2e2e2 !important;
+}
+
+th a:hover{
+  color: #fff !important;
+}
+
+.even-parentdir .indexcolname a{
+  position: relative;
+  color:transparent !important;
+}
+.even-parentdir .indexcolname a::after{
+  content:'..';
+  position:absolute;
+  left: .75rem;
+  color:#e2e2e2;
+}
