@@ -1,28 +1,26 @@
-body{
-  background-color: #333333;
-  border-top: 0.5rem solid #242424;
-  border-bottom: 0.5rem solid #242424;
+body {
+    background-color: #212121;
+    border-top: 0.5rem solid #000;
+    border-bottom: 0.5rem solid #000;
+    color: #e0e0e0;
 }
 
 table tr:hover {
-  background-color: #434343 !important;
+    background-color: #424242;
 }
 
-a, h1, td, address{
-  color: #e2e2e2 !important;
+a{
+    color: #e0e0e0;
 }
 
-th a:hover{
-  color: #fff !important;
+.even-parentdir .indexcolname a {
+    position: relative;
+    color: transparent !important;
 }
 
-.even-parentdir .indexcolname a{
-  position: relative;
-  color:transparent !important;
-}
-.even-parentdir .indexcolname a::after{
-  content:'..';
-  position:absolute;
-  left: .75rem;
-  color:#e2e2e2;
+.even-parentdir .indexcolname a::after {
+    content: '..';
+    position: absolute;
+    left: .75rem;
+    color: #e0e0e0;
 }
