@@ -36,7 +36,6 @@ table tr.indexhead:hover {
 table tr.indexhead a {
   font-weight: normal;
   font-size: 0.875rem;
-  color: #455a64;
 }
 
 table tr .indexcolname a,
