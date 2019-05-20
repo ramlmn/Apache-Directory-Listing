@@ -7,9 +7,17 @@
 
 ## Themes
 
-|        Grid style       |        Table style        |
+### Light theme
+
+|          `grid`         |          `table`          |
 |:-----------------------:|:-------------------------:|
 | ![grid](media/grid.png) | ![table](media/table.png) |
+
+### Dark theme
+
+|        `grid-darkmode`       |        `table-darkmode`        |
+|:----------------------------:|:------------------------------:|
+| ![grid](media/grid-dark.png) | ![table](media/table-dark.png) |
 
 
 ## Usage
