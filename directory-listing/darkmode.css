@@ -1,26 +1,14 @@
 body {
-    background-color: #212121;
-    border-top: 0.5rem solid #000;
-    border-bottom: 0.5rem solid #000;
-    color: #e0e0e0;
+  background-color: #212121;
+  border-top: 0.5rem solid #424242;
+  border-bottom: 0.5rem solid #424242;
+  color: #eeeeee;
 }
 
 table tr:hover {
-    background-color: #424242;
+  background-color: #424242;
 }
 
-a{
-    color: #e0e0e0;
-}
-
-.even-parentdir .indexcolname a {
-    position: relative;
-    color: transparent !important;
-}
-
-.even-parentdir .indexcolname a::after {
-    content: '..';
-    position: absolute;
-    left: .75rem;
-    color: #e0e0e0;
+a {
+  color: #82b1ff;
 }

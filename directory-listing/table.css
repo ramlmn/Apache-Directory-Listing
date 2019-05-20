@@ -1,27 +1,12 @@
 @import 'common.css';
 
-td a {
-    display:block;
-    width:100%;
-    text-decoration: none;
-}
-
-td{
-  margin: 0;
-  padding: 0;
-}
-
-.indexcolname a{
-  padding: .75rem;
-}
-
 table tr {
   padding: 0 0.25rem;
-  border-bottom: 1px solid rgba(0,0,0,0.075);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.075);
 }
 
 table tr.indexhead {
-  border-bottom-color: rgba(0,0,0,0.1);
+  border-bottom-color: rgba(0, 0, 0, 0.1);
 }
 
 table tr .indexcolname {
@@ -47,12 +32,22 @@ table tr .indexcolsize a {
 table tr .indexcolname a:hover,
 table tr .indexcollastmod a:hover,
 table tr .indexcolsize a:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+table tr.even-parentdir a {
+  font-weight: 500;
 }
 
 table tr .indexcollastmod,
 table tr .indexcolsize {
   padding: 0.5rem 1.5rem;
   font-size: 0.875rem;
+}
+
+table th,
+table td {
+  padding: 0.375rem;
 }
 
 table tr .indexcolsize {

@@ -1,33 +1,13 @@
 @import 'common.css';
 
+table {
+  margin-top: 2rem;
+  white-space: initial;
+}
+
 table tbody {
   display: flex;
   flex-wrap: wrap;
-}
-
-table{
-  margin-top: 2rem;
-}
-
-td a {
-  display:block;
-  text-decoration: none;
-  padding-bottom: .5rem;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-td img{
-  padding-top: .5rem;
-}
-
-td{
-  padding: 1rem;
-}
-
-.even-parentdir .indexcolname a::after{
-  left: 1.25rem;
 }
 
 table tr {
@@ -36,6 +16,7 @@ table tr {
   align-items: center;
   text-align: center;
   width: 6.5rem;
+  padding: 0.5rem;
 }
 
 table tr.indexhead,
