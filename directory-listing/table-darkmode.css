@@ -1,0 +1,10 @@
+@import 'table.css';
+@import 'darkmode.css';
+
+table tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+table tr.indexhead {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}

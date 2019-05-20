@@ -1,9 +1,8 @@
 @import 'common.css';
 
 table {
-  text-align: left;
-  border-collapse: collapse;
-  border-spacing: 0;
+  margin-top: 2rem;
+  white-space: initial;
 }
 
 table tbody {
@@ -17,12 +16,7 @@ table tr {
   align-items: center;
   text-align: center;
   width: 6.5rem;
-  margin: 0.25rem;
   padding: 0.5rem;
-}
-
-table tr:hover {
-  background-color: #eceff1;
 }
 
 table tr.indexhead,
@@ -33,10 +27,6 @@ table tr .indexcolsize {
 
 table tr .indexcolicon img {
   max-width: 100%;
-}
-
-table tr .indexcolicon a {
-  border: none;
 }
 
 table td {

@@ -1,23 +1,12 @@
 @import 'common.css';
 
-table {
-  text-align: left;
-  white-space: nowrap;
-  width: 100%;
-  border-collapse: collapse;
-}
-
 table tr {
   padding: 0 0.25rem;
-  border-bottom: 1px solid rgba(0,0,0,0.075);
-}
-
-table tr:hover {
-  background-color: #eceff1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.075);
 }
 
 table tr.indexhead {
-  border-bottom-color: rgba(0,0,0,0.1);
+  border-bottom-color: rgba(0, 0, 0, 0.1);
 }
 
 table tr .indexcolname {
@@ -32,7 +21,6 @@ table tr.indexhead:hover {
 table tr.indexhead a {
   font-weight: normal;
   font-size: 0.875rem;
-  color: #455a64;
 }
 
 table tr .indexcolname a,
@@ -64,10 +52,6 @@ table td {
 
 table tr .indexcolsize {
   text-align: right;
-}
-
-table tr .indexcolicon a {
-  border: none;
 }
 
 table tr .indexcolicon img {
