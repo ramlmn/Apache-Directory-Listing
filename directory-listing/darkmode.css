@@ -1,3 +1,7 @@
+html {
+  color-scheme: dark;
+}
+
 body {
   background-color: #212121;
   border-top: 0.5rem solid #424242;
