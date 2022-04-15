@@ -1,4 +1,4 @@
 @import 'grid.css';
 @media (prefers-color-scheme: dark) {
-  @import 'darkmode.css';
+  @import 'grid-darkmode.css';
 }
