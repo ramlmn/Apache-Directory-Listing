@@ -1,4 +1,2 @@
 @import 'table.css';
-@media (prefers-color-scheme: dark) {
-  @import 'table-darkmode.css';
-}
+@import 'table-darkmode.css' (prefers-color-scheme: dark);
